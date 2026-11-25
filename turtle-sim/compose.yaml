@@ -19,7 +19,7 @@ services:
       FLEETLESS_TOKEN: frt_...
     ports:
       # The view, reachable from this machine only.
-      - "127.0.0.1:8765:8765"
+      - "8765:8765"
     volumes:
       # Lets the bridge remember running jobs across restarts.
       - turtle-state:/state
